@@ -168,7 +168,6 @@ function Page() {
               </a>
             ))}
           </div>
-          <p className="mt-5 text-xs text-navy-foreground/60">{t.services.photoNote}</p>
           <div className="mt-16 grid gap-8 rounded-2xl border border-copper/40 p-10 md:grid-cols-[1fr_auto] md:items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-copper">{t.trading.label}</p>
