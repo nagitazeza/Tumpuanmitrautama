@@ -33,7 +33,7 @@ export const dict = {
       title: "Semua kebutuhan galangan, satu mitra.",
       sub: "Pengadaan berdasarkan spesifikasi, quantity, dan kebutuhan proyek — rutin maupun proyek docking.",
       ask: "Tanyakan item ini",
-      photoNote: "Ilustrasi AI konseptual, bukan foto atau dokumentasi proyek perusahaan.",
+      photoNote: "Foto ilustrasi, bukan dokumentasi proyek perusahaan.",
     },
     trading: {
       label: "General Trading & Product Supply",
@@ -89,7 +89,7 @@ export const dict = {
       title: "Everything a shipyard needs, one partner.",
       sub: "Procurement by specification, quantity and project scope — routine supply or full docking projects.",
       ask: "Ask about this item",
-      photoNote: "Conceptual AI illustrations, not photos or company project documentation.",
+      photoNote: "Illustrative photos, not company project documentation.",
     },
     trading: {
       label: "General Trading & Product Supply",

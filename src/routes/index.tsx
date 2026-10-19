@@ -4,16 +4,15 @@ import { ArrowRight, Mail, MapPin, MessageCircle, Phone, Anchor, Clock, Globe2, 
 import hero from "@/assets/hero.jpg";
 import supply from "@/assets/supply.jpg";
 import logo from "@/assets/logo.png";
-import steelImage from "@/assets/service-steel.svg";
-import paintImage from "@/assets/service-paint.svg";
-import puttyImage from "@/assets/service-putty.svg";
-import lubricantsImage from "@/assets/service-lubricants.svg";
-import sparesImage from "@/assets/service-spares.svg";
-import engineRoomImage from "@/assets/service-engine-room.svg";
-import workshopImage from "@/assets/service-workshop.svg";
-import safetyImage from "@/assets/service-safety.svg";
-import repairImage from "@/assets/service-repair.svg";
-import dockingImage from "@/assets/service-docking.svg";
+import steelImage from "@/assets/service-steel.jpg";
+import paintImage from "@/assets/service-paint.jpg";
+import paintMaterialsImage from "@/assets/service-paint-facility.jpg";
+import lubricantsImage from "@/assets/service-lubricants.jpg";
+import sparesImage from "@/assets/service-spares.jpg";
+import engineRoomImage from "@/assets/service-engine-room.jpg";
+import workshopImage from "@/assets/service-welding.jpg";
+import safetyImage from "@/assets/service-safety.jpg";
+import repairImage from "@/assets/service-repair.jpg";
 import { LangProvider, products, useLang } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -40,14 +39,14 @@ const EMAIL = "info@tumpuanmu.com";
 const productImgs = [
   steelImage,
   paintImage,
-  puttyImage,
+  paintMaterialsImage,
   lubricantsImage,
   sparesImage,
   engineRoomImage,
   workshopImage,
   safetyImage,
   repairImage,
-  dockingImage,
+  hero,
 ];
 
 function Logo({ light = false }: { light?: boolean }) {
