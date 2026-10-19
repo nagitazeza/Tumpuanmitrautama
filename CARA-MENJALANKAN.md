@@ -26,7 +26,7 @@ ke branch `main`. Build Pages menghasilkan situs statis di `.output/public`.
    *Build and deployment*.
 3. Push perubahan ke branch `main` untuk menjalankan workflow deploy.
 4. Pantau prosesnya di tab **Actions**. Setelah selesai, situs tersedia di
-   `https://tumpuanmitrautama.github.io/tumpuan/`.
+   `https://nagitazeza.github.io/Tumpuanmitrautama/`.
 
 Untuk membuat build Pages secara manual:
 

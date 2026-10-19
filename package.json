@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:pages": "vite build --base=/tumpuan/",
+    "build:pages": "vite build --base=/Tumpuanmitrautama/",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
