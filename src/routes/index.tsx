@@ -4,15 +4,16 @@ import { ArrowRight, Mail, MapPin, MessageCircle, Phone, Anchor, Clock, Globe2, 
 import hero from "@/assets/hero.jpg";
 import supply from "@/assets/supply.jpg";
 import logo from "@/assets/logo.png";
-import steelImage from "@/assets/service-steel.jpg";
-import paintImage from "@/assets/service-paint.jpg";
-import paintMaterialsImage from "@/assets/service-paint-facility.jpg";
-import lubricantsImage from "@/assets/service-lubricants.jpg";
-import sparesImage from "@/assets/service-spares.jpg";
-import engineRoomImage from "@/assets/service-engine-room.jpg";
-import workshopImage from "@/assets/service-welding.jpg";
-import safetyImage from "@/assets/service-safety.jpg";
-import repairImage from "@/assets/service-repair.jpg";
+import steelImage from "@/assets/service-steel.svg";
+import paintImage from "@/assets/service-paint.svg";
+import puttyImage from "@/assets/service-putty.svg";
+import lubricantsImage from "@/assets/service-lubricants.svg";
+import sparesImage from "@/assets/service-spares.svg";
+import engineRoomImage from "@/assets/service-engine-room.svg";
+import workshopImage from "@/assets/service-workshop.svg";
+import safetyImage from "@/assets/service-safety.svg";
+import repairImage from "@/assets/service-repair.svg";
+import dockingImage from "@/assets/service-docking.svg";
 import { LangProvider, products, useLang } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -39,76 +40,14 @@ const EMAIL = "info@tumpuanmu.com";
 const productImgs = [
   steelImage,
   paintImage,
-  paintMaterialsImage,
+  puttyImage,
   lubricantsImage,
   sparesImage,
   engineRoomImage,
   workshopImage,
   safetyImage,
   repairImage,
-  hero,
-];
-
-const photoCredits = [
-  {
-    title: "Getting steel plates ready for installation",
-    creator: "John Vachon",
-    source: "https://commons.wikimedia.org/wiki/File:Getting_steel_plates_ready_for_installation_8d39924v.jpg",
-    license: "Public domain",
-  },
-  {
-    title: "A dock worker painting a ship's hull",
-    creator: "Jorge Royan",
-    source: "https://commons.wikimedia.org/wiki/File:A_dock_worker_painting_a_ship%27s_hull,_Auckland_-_0294.jpg",
-    license: "CC BY-SA 3.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
-  },
-  {
-    title: "Shotblast and Paint Facility",
-    creator: "Mississippi Department of Archives and History",
-    source: "https://commons.wikimedia.org/wiki/File:%27Shotblast_and_Paint_Facility,_center_Foreground,_South-end_of_Panel_Shop,_background_Looking_Northeast._10-27-69.%27_Site_for_Litton_Advanced_Marine_Production_Division_(20877945081).jpg",
-    license: "No restrictions",
-  },
-  {
-    title: "Diesel fuel drums in Japan",
-    creator: "Ka23 13",
-    source: "https://commons.wikimedia.org/wiki/File:Diesel_fuel_20141012_112329.jpg",
-    license: "CC BY-SA 4.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
-  },
-  {
-    title: "Cruiser Aurora spare screw propeller blade",
-    creator: "Doomych",
-    source: "https://commons.wikimedia.org/wiki/File:Cruiser_Aurora._The_spare_screw_propeller_blade.jpg",
-    license: "Public domain",
-  },
-  {
-    title: "Virginia V engine room",
-    creator: "Joe Mabel",
-    source: "https://commons.wikimedia.org/wiki/File:Virginia_V_(ship,_1922)_engine_room_01.jpg",
-    license: "CC BY-SA 4.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
-  },
-  {
-    title: "Dhaka Shipyard welding propellers",
-    creator: "Kroisenbrunner",
-    source: "https://commons.wikimedia.org/wiki/File:Dhaka_Shipyard_-_welding_propellers.JPG",
-    license: "CC BY-SA 4.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
-  },
-  {
-    title: "Avondale shipyard worker wearing hearing protection",
-    creator: "John Messina",
-    source: "https://commons.wikimedia.org/wiki/File:AVONDALE_SHIPYARD_WORKER_WEARS_SPECIAL_EAR_MUFFS_FOR_PROTECTION_FROM_THE_HEAVY_LEVEL_OF_INDUSTRIAL_NOISE_POLLUTION_-_NARA_-_546041.jpg",
-    license: "Public domain",
-  },
-  {
-    title: "A&P Tyne ship repair and conversion yard",
-    creator: "Russel Wills",
-    source: "https://commons.wikimedia.org/wiki/File:A%5EP_Tyne_-_a_ship_repair_and_conversion_company_-_geograph.org.uk_-_4115133.jpg",
-    license: "CC BY-SA 2.0",
-    licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
-  },
+  dockingImage,
 ];
 
 function Logo({ light = false }: { light?: boolean }) {
@@ -218,8 +157,8 @@ function Page() {
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {products.map((p, i) => (
               <a key={p} href={askItem(p)} target="_blank" rel="noreferrer" className="group relative flex aspect-[3/4] flex-col justify-between overflow-hidden rounded-2xl p-5">
-                <img src={productImgs[i]} alt="" width={944} height={704} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/25 to-navy/15 transition group-hover:opacity-90" />
+                <img src={productImgs[i]} alt="" width={944} height={704} loading="lazy" className="absolute inset-0 h-full w-full object-cover brightness-110 contrast-105 saturate-125 transition duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/45 to-navy/25 transition group-hover:opacity-90" />
                 <span className="relative font-display text-sm text-copper">{String(i + 1).padStart(2, "0")}</span>
                 <div className="relative">
                   <div className="font-display text-lg font-medium leading-snug">{p}</div>
@@ -231,26 +170,6 @@ function Page() {
             ))}
           </div>
           <p className="mt-5 text-xs text-navy-foreground/60">{t.services.photoNote}</p>
-          <details className="mt-3 text-xs text-navy-foreground/70">
-            <summary className="w-fit cursor-pointer underline decoration-navy-foreground/40 underline-offset-4 hover:text-navy-foreground">
-              {t.services.photoCredits}
-            </summary>
-            <ul className="mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2">
-              {photoCredits.map((credit) => (
-                <li key={credit.source}>
-                  <a href={credit.source} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-copper">{credit.title}</a>
-                  {" — "}{credit.creator} · {credit.license}
-                  {credit.licenseUrl && (
-                    <>
-                      {" ("}
-                      <a href={credit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-copper">license</a>
-                      {")"}
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </details>
           <div className="mt-16 grid gap-8 rounded-2xl border border-copper/40 p-10 md:grid-cols-[1fr_auto] md:items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-copper">{t.trading.label}</p>
