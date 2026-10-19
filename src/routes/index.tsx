@@ -155,12 +155,13 @@ function Page() {
           </div>
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {products.map((p, i) => (
-              <a key={p} href={askItem(p)} target="_blank" rel="noreferrer" className="group relative flex aspect-[3/4] flex-col justify-between overflow-hidden rounded-2xl p-5">
-                <img src={productImgs[i]} alt="" width={944} height={704} loading="lazy" className="absolute inset-0 h-full w-full object-cover brightness-110 contrast-105 saturate-125 transition duration-700 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/45 to-navy/25 transition group-hover:opacity-90" />
-                <div className="relative">
+              <a key={p} href={askItem(p)} target="_blank" rel="noreferrer" className="group flex flex-col overflow-hidden rounded-2xl bg-white/5 transition hover:bg-white/10">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={productImgs[i]} alt="" width={944} height={704} loading="lazy" className="h-full w-full object-cover brightness-110 contrast-105 saturate-125 transition duration-700 group-hover:scale-105" />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
                   <div className="font-display text-lg font-medium leading-snug">{p}</div>
-                  <div className="mt-3 flex items-center gap-1 text-xs text-copper opacity-0 transition group-hover:opacity-100">
+                  <div className="mt-3 flex items-center gap-1 text-xs text-copper opacity-0 transition group-hover:opacity-100 group-focus-visible:opacity-100">
                     <MessageCircle className="h-3.5 w-3.5" /> {t.services.ask}
                   </div>
                 </div>
