@@ -157,7 +157,7 @@ function Page() {
             {products.map((p, i) => (
               <a key={p} href={askItem(p)} target="_blank" rel="noreferrer" className="group flex flex-col overflow-hidden rounded-2xl bg-white/5 transition hover:bg-white/10">
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={productImgs[i]} alt="" width={944} height={704} loading="lazy" className="h-full w-full object-cover brightness-110 contrast-105 saturate-125 transition duration-700 group-hover:scale-105" />
+                  <img src={productImgs[i]} alt="" width={944} height={704} loading="lazy" className="h-full w-full object-cover brightness-[0.82] contrast-[0.8] saturate-[0.8] transition duration-700 group-hover:scale-105 group-hover:brightness-90 group-hover:contrast-90 group-hover:saturate-90" />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="font-display text-lg font-medium leading-snug">{p}</div>
